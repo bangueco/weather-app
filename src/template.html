@@ -3,9 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tempest</title>
 </head>
 <body>
-  
+  <header>
+    <div class="header__icon">
+      Tempest
+    </div>
+    <div class="header__search-container">
+      <input type="search" name="search_city" id="search_city">
+      <button>Search</button>
+    </div>
+    <div class="header__temperature-container">
+      <button>C</button>
+    </div>
+  </header>
+  <main id="city">
+    <div class="city__cityInfo-container">
+      <div class="cityInfo">
+        <span class="cityInfo__city-name">Samal</span><span><span>, </span></span><span class="cityInfo__country">Philippines</span>
+      </div>
+      <div class="cityInfo-time">
+        <span class="city__local-time">2024-02-01 16:22</span>
+      </div>
+    </div>
+    <div class="city__weatherInfo-container">
+      <div id="weatherInfo-current">
+        <div class="weather-card">
+          <h1 class="weather-card-title">Current Forecast</h1>
+          <div class="condition-container">
+            <img class="condition-icon" src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+            <span class="condition">Partly cloudy</span>
+          </div>
+          <div class="weatherInfo">
+            <div class="temperature-container">
+              <p>Temperature</p>
+              <span class="temperature">28.0&deg;c</span>
+            </div>
+            <div class="wind-container">
+              <p>Wind</p>
+              <span><span class="wind">30</span>kph</span>
+            </div>
+            <div class="wind-direction-container">
+              <p>Wind Direction</p>
+              <span class="wind-direction">NE</span>
+            </div>
+            <div class="humidity-container">
+              <p>Humidity</p>
+              <span class="humidity">20</span>
+            </div>
+            <div class="cloud-container">
+              <p>Cloud</p>
+              <span class="cloud">50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="weatherInfo-forecast">
+        <h1>7 Day Forecast</h1>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
