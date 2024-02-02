@@ -1,3 +1,5 @@
+import {format} from 'date-fns';
+
 const searchDOM = (function() {
   const _search_input = document.querySelector('#search_city');
   const search_button = document.querySelector('#search');
@@ -67,7 +69,7 @@ const weatherInfoDOM = (function() {
       weatherInfo.classList.add('weatherInfo');
       
       // Adding data
-      card_title.textContent = data.forecast[x].date;
+      card_title.textContent = format(data.forecast[x].date, 'eeee');
       icon.src = data.forecast[x].condition.icon;
       condition.textContent = data.forecast[x].condition.condition_status;
       temperatureLabel.textContent = 'Temperature';
