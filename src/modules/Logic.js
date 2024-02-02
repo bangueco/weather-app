@@ -2,6 +2,7 @@ import { getWeatherData } from './WeatherApi';
 import { weatherInfoDOM } from './DOM';
 
 function processData(data) {
+  console.log(data);
   const cityProcessedData = {
     city_info: {
       city_name: data.location.name,
@@ -19,6 +20,62 @@ function processData(data) {
       humidity: data.current.humidity,
       cloud: data.current.cloud
     },
+    forecast: [
+      {
+        date: data.forecast.forecastday[1].date,
+        condition: {
+          icon: data.forecast.forecastday[1].day.condition.icon,
+          condition_status: data.forecast.forecastday[1].day.condition.text,
+        },
+        temperature: data.forecast.forecastday[1].day.maxtemp_c,
+        wind: data.forecast.forecastday[1].day.maxwind_kph,
+      },
+      {
+        date: data.forecast.forecastday[2].date,
+        condition: {
+          icon: data.forecast.forecastday[2].day.condition.icon,
+          condition_status: data.forecast.forecastday[2].day.condition.text,
+        },
+        temperature: data.forecast.forecastday[2].day.maxtemp_c,
+        wind: data.forecast.forecastday[2].day.maxwind_kph,
+      },
+      {
+        date: data.forecast.forecastday[3].date,
+        condition: {
+          icon: data.forecast.forecastday[3].day.condition.icon,
+          condition_status: data.forecast.forecastday[3].day.condition.text,
+        },
+        temperature: data.forecast.forecastday[3].day.maxtemp_c,
+        wind: data.forecast.forecastday[3].day.maxwind_kph,
+      },
+      {
+        date: data.forecast.forecastday[4].date,
+        condition: {
+          icon: data.forecast.forecastday[4].day.condition.icon,
+          condition_status: data.forecast.forecastday[4].day.condition.text,
+        },
+        temperature: data.forecast.forecastday[4].day.maxtemp_c,
+        wind: data.forecast.forecastday[4].day.maxwind_kph,
+      },
+      {
+        date: data.forecast.forecastday[5].date,
+        condition: {
+          icon: data.forecast.forecastday[5].day.condition.icon,
+          condition_status: data.forecast.forecastday[5].day.condition.text,
+        },
+        temperature: data.forecast.forecastday[5].day.maxtemp_c,
+        wind: data.forecast.forecastday[5].day.maxwind_kph,
+      },
+      {
+        date: data.forecast.forecastday[6].date,
+        condition: {
+          icon: data.forecast.forecastday[6].day.condition.icon,
+          condition_status: data.forecast.forecastday[6].day.condition.text,
+        },
+        temperature: data.forecast.forecastday[6].day.maxtemp_c,
+        wind: data.forecast.forecastday[6].day.maxwind_kph,
+      },
+    ]
   };
 
   return cityProcessedData;
