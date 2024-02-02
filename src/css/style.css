@@ -155,22 +155,55 @@ header > .header__temperature-container > button {
   font-size: 1.3rem;
 }
 
-#city > .city__weatherInfo-container > #weatherInfo-forecast {
+#weatherInfo-forecast {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.397);
   border-radius: 5px;
   width: 80%;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
-#city > .city__weatherInfo-container > #weatherInfo-forecast > .forecast-container {
+#weatherInfo-forecast > .forecast-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex: 1;
+  overflow: scroll;
+  height: 100%;
+  padding: 5px;
+  gap: 10px;
+}
+
+.forecast-container > .weather-card {
   padding: 10px;
+  width: 100%;
+  height: 65%;
+  background-color: var(--primary-color);
+}
+
+.forecast-container > .weather-card > .weatherInfo > div {
+  text-align: center;
+}
+
+.forecast-container > .weather-card > .weatherInfo > div > p {
+  font-size: 0.9rem;
+}
+
+.forecast-container > .weather-card > .weatherInfo > div > span {
+  font-size: 0.8rem;
+}
+
+.forecast-container > .weather-card > h1 {
+  font-size: 1.2rem;
+}
+
+.forecast-container > .weather-card > .condition-container > img {
+  width: 30%;
+}
+
+.forecast-container > .weather-card > .condition-container > span {
+  font-size: 0.8rem;
 }
 
 /* WEATHER CONTAINER */
