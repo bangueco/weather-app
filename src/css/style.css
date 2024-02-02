@@ -127,7 +127,6 @@ header > .header__temperature-container > button {
 
 #city > .city__weatherInfo-container > #weatherInfo-current {
   padding: 10px;
-  border: 1px solid beige;
 }
 
 .weather-card {
@@ -157,9 +156,21 @@ header > .header__temperature-container > button {
 }
 
 #city > .city__weatherInfo-container > #weatherInfo-forecast {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 5px;
   width: 80%;
   text-align: center;
+  padding: 20px;
+}
+
+#city > .city__weatherInfo-container > #weatherInfo-forecast > .forecast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
 }
 
 /* WEATHER CONTAINER */

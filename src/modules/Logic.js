@@ -9,6 +9,10 @@ function processData(data) {
       city_localtime: data.location.localtime,
     },
     current_forecast: {
+      condition: {
+        icon: data.current.condition.icon,
+        condition_status: data.current.condition.text
+      },
       temperature: data.current.temp_c,
       wind: data.current.wind_kph,
       wind_direction: data.current.wind_dir,

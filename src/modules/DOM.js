@@ -19,6 +19,8 @@ const weatherInfoDOM = (function() {
     const _cityCountry = document.querySelector('.cityInfo__country');
     const _cityLocalTime = document.querySelector('.city__local-time');
 
+    const _currentConditionImg = document.querySelector('#current-condition-icon');
+    const _currentCondition = document.querySelector('#current-condition');
     const _currentTemperature = document.querySelector('#current-temperature');
     const _currentWind = document.querySelector('#current-wind');
     const _currentWindDirection = document.querySelector('#current-wind-direction');
@@ -30,6 +32,8 @@ const weatherInfoDOM = (function() {
     _cityCountry.textContent = data.city_info.city_country;
     _cityLocalTime.textContent = data.city_info.city_localtime;
 
+    _currentConditionImg.src = data.current_forecast.condition.icon;
+    _currentCondition.textContent = data.current_forecast.condition.condition_status;
     _currentTemperature.textContent = data.current_forecast.temperature;
     _currentWind.textContent = data.current_forecast.wind;
     _currentWindDirection.textContent = data.current_forecast.wind_direction;
