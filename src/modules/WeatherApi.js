@@ -1,6 +1,6 @@
 import { processData } from './Logic';
 
-const API_KEY = 'e87308b858e24e43ab0135521243001';
+const API_KEY = 'a75846f36a39400e9d132349240105';
 
 async function getWeatherData(city) {
   try {
