@@ -15,10 +15,9 @@ function processData(data) {
         condition_status: data.current.condition.text
       },
       temperature: data.current.temp_c,
-      wind: data.current.wind_kph,
-      wind_direction: data.current.wind_dir,
+      feels_like: data.current.feelslike_c,
       humidity: data.current.humidity,
-      cloud: data.current.cloud
+      wind: data.current.wind_kph
     }
   };
 
