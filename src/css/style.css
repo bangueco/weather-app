@@ -101,60 +101,15 @@ header > .header__temperature-container > button {
 /* HEADER */
 
 /* MAIN */
-
-/* CITY CONTAINER */
-#city > .city__cityInfo-container > .cityInfo {
-  padding: 5px;
-  font-size: 3rem;
+#city_info {
   text-align: center;
 }
 
-#city > .city__cityInfo-container > .cityInfo-time {
-  text-align: center;
+#city_info > .cityName {
+  font-size: 2.5rem;
+}
+
+#city_info > .cityLocalTime {
   font-size: 1.5rem;
 }
-
-/* CITY CONTAINER */
-
-/* WEATHER CONTAINER */
-
-#city > .city__weatherInfo-container {
-  display: flex;
-  padding: 20px;
-  height: 100%;
-  justify-content: center;
-}
-
-#city > .city__weatherInfo-container > #weatherInfo-current {
-  padding: 10px;
-}
-
-.weather-card {
-  height: 100%;
-  padding: 15px;
-  border: 5px solid white;
-  border-radius: 20px;
-}
-
-.weather-card > .weather-card-title {
-  font-size: 1.5rem;
-}
-
-.weather-card > .condition-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-}
-
-.weather-card > .weatherInfo {
-  font-size: 1rem;
-}
-
-.weather-card > .weatherInfo > div > p {
-  font-size: 1.3rem;
-}
-
-/* WEATHER CONTAINER */
-
 /* MAIN */
