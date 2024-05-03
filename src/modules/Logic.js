@@ -7,13 +7,9 @@ function processData(data) {
     city_info: {
       city_name: data.location.name,
       city_country: data.location.country,
-      city_localtime: data.location.localtime,
     },
     current_forecast: {
-      condition: {
-        icon: data.current.condition.icon,
-        condition_status: data.current.condition.text
-      },
+      condition_status: data.current.condition.text,
       temperature: data.current.temp_c,
       feels_like: data.current.feelslike_c,
       humidity: data.current.humidity,
