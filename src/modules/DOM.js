@@ -1,4 +1,4 @@
-import CityInfo from './components/CityInfo';
+import GeneralInfo from './components/GeneralInfo';
 import CurrentForecast from './components/CurrentForecast';
 
 const searchDOM = (function() {
@@ -17,7 +17,7 @@ const searchDOM = (function() {
 
 const weatherInfoDOM = (function() {
   const displayWeatherData = (data) => {
-    CityInfo(data);
+    GeneralInfo(data);
     CurrentForecast(data);
   };
 
