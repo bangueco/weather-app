@@ -7,28 +7,24 @@
 </head>
 <body>
   <header>
-    <div class="header__icon">
-      Tempest
-    </div>
-    <div class="header__search-container">
-      <input type="search" name="search_city" id="search_city">
-      <button id="search">Search</button>
-    </div>
-    <div class="header__temperature-container">
-      <button>C</button>
-    </div>
+    <input type="search" name="search_city" id="search_city">
+    <button id="search">Search</button>
   </header>
   <main id="city">
+    <span></span>
     <div id="city_info">
-      <img class="conditionIcon"></img>
-      <div class="temperature"></div>
-      <div class="conditionStatus"></div>
-      <div class="cityName"></div>
-      <div class="cityLocalTime"></div>
+      <div class="city_info__general">
+        <p class="conditionStatus"></p>
+        <p class="cityName"></p>
+      </div>
       <div class="additional_info">
-        <div class="humidity"></div>
-        <div class="feelsLike"></div>
-        <div class="wind"></div>
+        <p class="temperature"></p>
+        <hr>
+        <div class="stats">
+          <p class="humidity"></p>
+          <p class="feelsLike"></p>
+          <p class="wind"></p>
+        </div>
       </div>
     </div>
   </main>
