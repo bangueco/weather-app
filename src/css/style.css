@@ -50,7 +50,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* CSS RESET LINE ENDS HERE */
 
 html, body {
-  height: 100%;
+  height: 100vh;
 }
 
 body {
@@ -69,50 +69,85 @@ body {
 /* HEADER */
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-}
-
-header > .header__icon {
-  font-size: 3.5rem;
-  padding: 20px;
-}
-
-header > .header__search-container {
-  display: flex;
   gap: 5px;
-  width: 50%;
   padding: 20px;
-}
-
-header > .header__search-container > input {
-  width: 100%;
-}
-
-header > .header__temperature-container {
-  padding: 20px;
-}
-
-header > .header__temperature-container > button {
-  font-size: 2rem;
-  padding: 8px 36px;
 }
 
 /* HEADER */
 
 /* MAIN */
-#city_info {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90%;
+}
+
+#city_info > .city_info__general {
+  display: flex;
   flex-direction: column;
 }
 
-#city_info > .cityName {
+#city_info > .city_info__general > .conditionStatus {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 0.5rem;
+}
+
+#city_info > .city_info__general > .cityName {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 #city_info > .cityLocalTime {
   font-size: 1.5rem;
+}
+
+#city_info > .conditionIcon {
+  height: 100px;
+}
+
+#city_info > .additional_info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional_info > .temperature {
+  display: flex;
+  font-size: 4.5rem;
+  align-self: center;
+  margin: 0;
+}
+
+.additional_info > hr {
+  height: 80px;
+}
+
+.tempsymbol {
+  font-size: 1.5rem;
+}
+
+.tempsymbol2 {
+  font-size: 1rem;
+}
+
+.temperature::after {
+  background-color: red;
+}
+
+.stats > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+.stats > .feelsLike {
+  display: flex;
 }
 /* MAIN */
