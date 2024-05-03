@@ -1,11 +1,9 @@
-import {format} from 'date-fns';
-
 const CityInfo = (data) => {
+  const conditionStatus = document.querySelector('.conditionStatus');
   const cityName = document.querySelector('.cityName');
-  const cityLocalTime = document.querySelector('.cityLocalTime');
 
+  conditionStatus.textContent = data.current_forecast.condition_status;
   cityName.textContent = `${data.city_info.city_name}, ${data.city_info.city_country}`;
-  cityLocalTime.textContent = format(data.city_info.city_localtime, 'MM/dd/yyyy, hh:mm a');
 };
 
 export default CityInfo;
