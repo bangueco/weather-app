@@ -2,7 +2,6 @@ import { getWeatherData } from './WeatherApi';
 import { weatherInfoDOM } from './DOM';
 
 function processData(data) {
-  console.log(data);
   const cityProcessedData = {
     city_info: {
       city_name: data.location.name,
